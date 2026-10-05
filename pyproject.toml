@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leukocyte"
+version = "0.1.0"
+description = "白血球 (Leukocyte): 学習用の軽量スキャナー"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["watchdog>=4"]
+
+[project.optional-dependencies]
+yara = ["yara-python"]
+
+[project.scripts]
+leukocyte = "leukocyte.cli:main"
+
+[project.gui-scripts]
+leukocyte-gui = "leukocyte.gui:main"
+
+[tool.setuptools]
+packages = ["leukocyte"]

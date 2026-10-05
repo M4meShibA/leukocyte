@@ -1,0 +1,12 @@
+# 白血球 (Leukocyte) の設定
+# 相対パスは、このファイルがあるフォルダが基準です。
+
+[paths]
+signatures = "signatures/hashes.txt"  # 不正ハッシュの一覧
+rules = "rules"  # YARAルールのフォルダ
+quarantine = "quarantine"  # 隔離フォルダ
+log = "scan.log"  # ログファイル
+
+[behavior]
+auto_quarantine = true  # 検知したら自動で隔離する
+use_yara = true  # YARAルールを使う(yara-pythonが必要)

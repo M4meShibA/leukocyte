@@ -1,0 +1,21 @@
+# 抗原データベース(1行1ハッシュ / SHA-256)
+275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f  # EICARテストファイル(無害な動作確認用)
+
+# =========================================================
+# Leukocyte 用テスト・サンプル用ハッシュリスト (SHA-256)
+# =========================================================
+
+# 1. 業界標準アンチウイルス テストファイル (EICAR)
+# ※安全なテスト用テキストです。このハッシュを持つファイルを保存・生成してスキャンすると安全に検知テストできます。
+131f95c51cc819465fa1797f6ccacf9d494aaaea46fa3a3a7188282305a39775, Test_EICAR_Standard_AntiVirus_Test_File
+
+# 2. 有名なランサムウェア（WannaCry）の検知用サンプル
+24d3dd281161b73e22345377099f7d4328811802371900138356c4573f08967b, Malware_Ransomware_WannaCry_Executable
+ed01edf840453a1114143540bf8206550002b8a74b42f3a5e07f0f08c35d9434, Malware_Ransomware_WannaCry_Variant
+
+# 3. 有名なトロイの木馬・インフォスティーラー（Emotet / AgentTesla）
+a816175e52c80345b5e90d79432f81a7b8e50bc78d10b7ee11e031dfd477813a, Malware_Trojan_Emotet_Payload
+11487f97dfba1a6aa1c5e42f9b2d861617bd31a982a7a408e0f9b3dd24fb237e, Malware_Spyware_AgentTesla
+
+# 4. バックドア・遠隔操作ツール（DarkComet 等）
+d3a2417734a7818e97f4fa116b41221e3c03a986c738ef9e1a14197c365f5732, Malware_Backdoor_DarkComet

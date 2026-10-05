@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.vscode/
+
+# 実行時に作られるもの(隔離ファイルと、パスを含む記録)
+quarantine/
+scan.log
+*.log
